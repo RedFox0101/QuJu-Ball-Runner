@@ -134,9 +134,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1670177468832912032}
   - component: {fileID: 8219752066474662629}
-  - component: {fileID: 5070038551974442325}
   - component: {fileID: 6873329041659203595}
   - component: {fileID: 300677716576271031}
+  - component: {fileID: 5665802948096776523}
   m_Layer: 6
   m_Name: Life
   m_TagString: life
@@ -209,20 +209,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5070038551974442325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6176208382286616922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c113d34337d291344be31fa9f4590e62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Particall: {fileID: 876328225115594239, guid: fb3f7720189956345aa6d1de62157d8f, type: 3}
-  _bonusEffect: {fileID: 11400000, guid: 8c68da476e3d1234a9aecbfc319e3b11, type: 2}
 --- !u!82 &6873329041659203595
 AudioSource:
   m_ObjectHideFlags: 0
@@ -345,3 +331,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.8402243, y: 5.8100004}
   m_EdgeRadius: 0
+--- !u!114 &5665802948096776523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6176208382286616922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee94e491a316ddd49821b1866d8cefb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

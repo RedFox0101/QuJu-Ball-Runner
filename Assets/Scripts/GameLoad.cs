@@ -1,23 +1,13 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class GameLoad : MonoBehaviour
 {
-   
-    public int SceneNumber;
-   
-  
-
+    [SerializeField] private int _sceneId;
 
     public void onLoadScene()
     {
-      
-        SceneManager.LoadScene(SceneNumber);
+        SceneManager.LoadScene(_sceneId);
     }
 
-   
-
-  
 }

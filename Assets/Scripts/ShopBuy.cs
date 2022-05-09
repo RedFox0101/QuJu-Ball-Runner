@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -27,7 +25,7 @@ public class ShopBuy : MonoBehaviour
             if (IsBought == false)
             {
                 PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") - SumCoins);
-                EventHolder.RaiseCoinsShopAction(PlayerPrefs.GetInt("Coins"));
+               
                 Instantiate(AudioSource);
 
             }

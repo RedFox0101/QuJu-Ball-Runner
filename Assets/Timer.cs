@@ -3,25 +3,25 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Text))]
 public class Timer : MonoBehaviour
 {
-    public Text TimerLabel;
-    [SerializeField]
-    private int _coulDawn;
-    public bool IsPlay=false;
-    
+    [SerializeField] private Text TimerLabel;
+    [SerializeField] private int _coulDawn;
 
     private void Start()
     {
-        TimerLabel =this.GetComponent<Text>();
-    }
-    public void PlayTimer()
-    {
-        StartCoroutine(OnTimer());
+        TimerLabel = GetComponent<Text>();
     }
 
-    IEnumerator OnTimer()
+    public void PlayTimer()
     {
+        StartCoroutine(Play());
+    }
+
+    IEnumerator Play()
+    {
+
         while (_coulDawn != -1)
         {
             if (_coulDawn == 0)
@@ -30,20 +30,18 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                TimerLabel.text = Convert.ToString(_coulDawn);
+                TimerLabel.text = _coulDawn.ToString();
             }
-           
+
             _coulDawn--;
             yield return new WaitForSecondsRealtime(1);
         }
 
-        if (_coulDawn ==-1)
+        if (_coulDawn == -1)
         {
-
             Time.timeScale = 1;
             _coulDawn = 3;
             TimerLabel.gameObject.SetActive(false);
-
         }
     }
 }

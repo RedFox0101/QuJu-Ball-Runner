@@ -68,6 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveCollections: 1
+  _speed: 0.05
 --- !u!1 &2560874258891827238
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,6 +109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6818547134502505406}
   - component: {fileID: 1524895715723434402}
+  - component: {fileID: 4769543011268766238}
   m_Layer: 0
   m_Name: End (1)
   m_TagString: Room_Begin
@@ -155,6 +157,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.66, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &4769543011268766238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7313163340396321196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c0d59d6f9e76d4e83af139d03ff002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &686187951170735356
 PrefabInstance:
   m_ObjectHideFlags: 0

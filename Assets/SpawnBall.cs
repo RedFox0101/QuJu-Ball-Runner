@@ -4,37 +4,52 @@ using UnityEngine;
 
 public class SpawnBall : MonoBehaviour
 {
-   
-    private Player _ball;
-    [SerializeField]
-    private GameObject _effect;
- 
-    [SerializeField]
-    private Timer _timer;
+    [SerializeField] private GameObject _effect;
+    [SerializeField] private ContainerPlayers _collectionPlayers;
+    [SerializeField] private Timer _timer;
+
+    private Transform _transformPlayer;
+    private float _offset = 0.5f;
+    private bool _isSpawn;
+
     private void Start()
     {
         _timer.gameObject.SetActive(true);
+
         _timer.PlayTimer();
-        _ball = Singelton.instant.Player;
-       
+
         Time.timeScale = 0;
+
+        _collectionPlayers.TryGetPlayerComponent(ref _transformPlayer);
     }
 
-
-   private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Platform") && Singelton.instant.IsSpawn == true)
+        if (_isSpawn == true)
         {
-            _ball.transform.parent = null;
-            Singelton.instant.IsSpawn = false;
-
-            _ball.gameObject.transform.position = new Vector2(collision.transform.position.x + 0.5f, collision.transform.position.y + 0.5f);
-           
-                Instantiate(_effect, _ball.transform);
-            
-
+            if (collision.TryGetComponent(out Platform platform))
+            {
+                Spaw(collision.transform);
+            }
         }
     }
-  
-   
+
+    private void Spaw(Transform _platformaTransform)
+    {
+        _isSpawn = false;
+
+        _transformPlayer.parent = null;
+
+        _transformPlayer.position = new Vector2(_platformaTransform.position.x + _offset, _platformaTransform.position.y + _offset);
+
+        Instantiate(_effect, _transformPlayer);    
+    }
+
+    public void OnSpawn()
+    {
+        _isSpawn = true;
+    }
 }
+
+
+

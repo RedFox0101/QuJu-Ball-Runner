@@ -9,7 +9,7 @@ public class MobAdsRewarded : MonoBehaviour
 {
     private RewardedAd rewardedAd;
    
-    private GameState GameState;
+    private Game GameState;
 
 #if UNITY_ANDROID
     private const string rewardedUnitId = "ca-app-pub-6443470573717883/3835448164"; //тестовый айди
@@ -20,7 +20,7 @@ public class MobAdsRewarded : MonoBehaviour
 #endif
     void OnEnable()
     {
-        GameState = GetComponent<GameState>();
+        GameState = GetComponent<Game>();
         rewardedAd = new RewardedAd(rewardedUnitId);
         AdRequest adRequest = new AdRequest.Builder().Build();
         rewardedAd.LoadAd(adRequest);
@@ -43,6 +43,5 @@ public class MobAdsRewarded : MonoBehaviour
 
     public void HandleUserEarnedReward(object sender, Reward args)
     {
-        GameState.Respawn();
     }
 }

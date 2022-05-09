@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1370385194597939764}
   - component: {fileID: 2135094049058590847}
   - component: {fileID: 5744977350233016048}
-  - component: {fileID: -3145012487632893744}
   - component: {fileID: 2214016947808710609}
+  - component: {fileID: 5433671205920463597}
   m_Layer: 8
   m_Name: RedPlatform
   m_TagString: Dangerous
@@ -125,20 +125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveCollections: 3
---- !u!114 &-3145012487632893744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2661389761429709300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c113d34337d291344be31fa9f4590e62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Particall: {fileID: 876328225115594239, guid: fb3f7720189956345aa6d1de62157d8f, type: 3}
-  _bonusEffect: {fileID: 11400000, guid: 14e3e4dd77509364cb82fa9b2f9b620d, type: 2}
 --- !u!82 &2214016947808710609
 AudioSource:
   m_ObjectHideFlags: 0
@@ -235,3 +221,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5433671205920463597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2661389761429709300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56dae8d5076deba47afcba4a7d3f8baa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 0
