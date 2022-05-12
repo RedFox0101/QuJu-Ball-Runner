@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 public class HealthView : MonoBehaviour
 {
     [SerializeField] Text _countHealthLabel;
-    [SerializeField] private ContainerPlayers _collectionPlayers;
+    [Inject] private ContainerPlayers _collectionPlayers;
 
     private Health _health;
 
@@ -13,7 +14,6 @@ public class HealthView : MonoBehaviour
         if(_collectionPlayers.TryGetPlayerComponent(ref _health))
         {
             _health._UpdateHealth += UpdateCountHealth;
-            Debug.Log("yES");
         }
     }
 

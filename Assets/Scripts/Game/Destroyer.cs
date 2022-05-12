@@ -10,7 +10,7 @@ public class Destroyer : MonoBehaviour
         if (collision.TryGetComponent(out EndRoom room))
         {
             _spawnRoom.Spawn();
-            Destroy(room.transform.parent.gameObject, 1f);
+            room.transform.parent.gameObject.SetActive(false);
         }
     }
 }

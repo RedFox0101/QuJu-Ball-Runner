@@ -1,10 +1,11 @@
 using UnityEngine;
 using TMPro;
+using Zenject;
 
 public class PurseView : MonoBehaviour
 {
     [SerializeField] private TMP_Text _countCoins;
-    [SerializeField] private ContainerPlayers _collectionPlayers;
+    [Inject] private ContainerPlayers _collectionPlayers;
 
     private Purse _purse;
 

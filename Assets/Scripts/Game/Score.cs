@@ -1,4 +1,4 @@
-using System;
+using Zenject;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,7 +6,7 @@ public class Score : MonoBehaviour
 {
     [SerializeField] Text _scoreView;
     [SerializeField] Text _bestScore;
-    [SerializeField] private ContainerPlayers _containerPlayers;
+    [Inject] private ContainerPlayers _containerPlayers;
 
     private int _score=0;
     private Health _health;

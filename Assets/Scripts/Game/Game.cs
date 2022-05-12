@@ -1,9 +1,10 @@
 using UnityEngine;
+using Zenject;
 
 public class Game : MonoBehaviour
 {
-    [SerializeField] private ContainerPlayers _containerPlayers;
     [SerializeField] private GameObject _panelGameOver;
+    [Inject] private ContainerPlayers _containerPlayers;
 
     private Health _health;
 

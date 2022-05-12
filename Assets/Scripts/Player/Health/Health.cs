@@ -4,7 +4,7 @@ using UnityEngine.Events;
 public class Health : MonoBehaviour
 {
     [SerializeField] private int _amout;
-
+    [SerializeField] private int _maxAmout;
     public UnityAction<int> _UpdateHealth;
     public UnityAction Dead;
 
@@ -14,8 +14,11 @@ public class Health : MonoBehaviour
     }
     public void Add()
     {
-        _amout++;
-        _UpdateHealth?.Invoke(_amout);
+        if (_amout < _maxAmout)
+        {
+            _amout++;
+            _UpdateHealth?.Invoke(_amout);
+        }
     }
 
     public void TakeDamage()
