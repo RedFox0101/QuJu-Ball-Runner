@@ -135,12 +135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e9d93ef0ed7564986a5f47e4d38afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sumCoins: 13000
-  _name: Stone Boby
-  _shopBuy: {fileID: 8538351600677852628}
-  _key: StoneBall
-  IsBuy: 0
-  IndexBall: 5
+  _item: {fileID: 0}
+  _shopView: {fileID: 0}
 --- !u!82 &111275311
 AudioSource:
   m_ObjectHideFlags: 0
@@ -268,7 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e20873f0e60b1c4a82593c3fdfa2c90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneNumber: 0
+  _sceneId: 0
 --- !u!4 &217104557
 Transform:
   m_ObjectHideFlags: 0
@@ -295,7 +291,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a7ecd190fbe043409d13d21ecc885fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _text: {fileID: 1438865836}
 --- !u!82 &217104560
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1213,12 +1208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e9d93ef0ed7564986a5f47e4d38afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sumCoins: 15000
-  _name: 'Ninja '
-  _shopBuy: {fileID: 8538351600677852628}
-  _key: Ninja
-  IsBuy: 0
-  IndexBall: 4
+  _item: {fileID: 0}
+  _shopView: {fileID: 0}
 --- !u!114 &1553971462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1231,12 +1222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e9d93ef0ed7564986a5f47e4d38afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sumCoins: 25000
-  _name: Viking War
-  _shopBuy: {fileID: 8538351600677852628}
-  _key: Viking
-  IsBuy: 0
-  IndexBall: 6
+  _item: {fileID: 0}
+  _shopView: {fileID: 0}
 --- !u!82 &1553971472
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1545,7 +1532,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.63200605
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -1728,8 +1715,9 @@ GameObject:
   - component: {fileID: 1842646909}
   - component: {fileID: 1842646911}
   - component: {fileID: 1842646910}
+  - component: {fileID: 1842646912}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: ItemPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1794,6 +1782,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842646908}
   m_CullTransparentMesh: 1
+--- !u!114 &1842646912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842646908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0252c11186fdac43b32b80afdc29ab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _icon: {fileID: 8538351600677852630}
+  _nameLabel: {fileID: 8538351600326429437}
+  _priceLabel: {fileID: 8538351599639923193}
+  _buyButton: {fileID: 8538351599221723257}
 --- !u!1 &6374773252500462852
 GameObject:
   m_ObjectHideFlags: 0
@@ -2215,12 +2219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e9d93ef0ed7564986a5f47e4d38afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sumCoins: 0
-  _name: V.V.
-  _shopBuy: {fileID: 8538351600677852628}
-  _key: SmallBall
-  IsBuy: 1
-  IndexBall: 0
+  _item: {fileID: 11400000, guid: 15aee82c48e5ed64ca9af583b10b04c3, type: 2}
+  _shopView: {fileID: 1842646912}
 --- !u!224 &8538351599455418053
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2235,10 +2235,10 @@ RectTransform:
   m_Father: {fileID: 8538351600175896745}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.04480383, y: 0.5}
-  m_AnchorMax: {x: 0.3067943, y: 0.87600005}
-  m_AnchoredPosition: {x: 3.75, y: 3.8000488}
-  m_SizeDelta: {x: -4.8200073, y: -10.299988}
+  m_AnchorMin: {x: 0.04480383, y: 0.58729345}
+  m_AnchorMax: {x: 0.30400002, y: 0.7934401}
+  m_AnchoredPosition: {x: 4.75, y: 1.8000488}
+  m_SizeDelta: {x: -2.8200073, y: 137.70001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8538351599455418054
 GameObject:
@@ -2309,6 +2309,7 @@ GameObject:
   - component: {fileID: 8538351600175896745}
   - component: {fileID: 8538351599501336619}
   - component: {fileID: 8538351599501336620}
+  - component: {fileID: 8538351599501336622}
   m_Layer: 5
   m_Name: Shop_Panel
   m_TagString: Untagged
@@ -2316,6 +2317,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8538351599501336622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8538351599501336621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10709e701f7a25a41a20591bda32da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemView: {fileID: 1842646912}
 --- !u!222 &8538351599570122161
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2437,7 +2451,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &8538351599639923192
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2536,7 +2550,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &8538351599651846964
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2587,12 +2601,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e9d93ef0ed7564986a5f47e4d38afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sumCoins: 5000
-  _name: Daddy
-  _shopBuy: {fileID: 8538351600677852628}
-  _key: Dady
-  IsBuy: 0
-  IndexBall: 2
+  _item: {fileID: 0}
+  _shopView: {fileID: 0}
 --- !u!224 &8538351599651846967
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2733,7 +2743,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &8538351600083761088
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,7 +2764,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &8538351600083761100
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3011,14 +3021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10709e701f7a25a41a20591bda32da5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AudioSource: {fileID: 8008056406989112849, guid: 9d359fe5127726945b84f6a53faa501a, type: 3}
-  Icon: {fileID: 8538351600677852630}
-  NameLabel: {fileID: 8538351600326429437}
-  SumLabel: {fileID: 8538351599639923193}
-  SumCoins: 0
-  IndexBall: 0
-  IsBought: 0
-  Key: 
+  _itemView: {fileID: 0}
 --- !u!222 &8538351600677852629
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3151,12 +3154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e9d93ef0ed7564986a5f47e4d38afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sumCoins: 10000
-  _name: Santa Jack
-  _shopBuy: {fileID: 8538351600677852628}
-  _key: Sants
-  IsBuy: 0
-  IndexBall: 3
+  _item: {fileID: 0}
+  _shopView: {fileID: 0}
 --- !u!224 &8538351600740528134
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3196,4 +3195,4 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
