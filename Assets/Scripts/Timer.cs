@@ -26,7 +26,7 @@ public class Timer : MonoBehaviour
         {
             if (_coulDawn == 0)
             {
-                TimerLabel.text = "Go";
+                TimerLabel.text = "Go!!!";
             }
             else
             {

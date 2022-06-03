@@ -75,6 +75,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -532,6 +533,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Atlas2_9: 1031563716797472259
+      Atlas2_19: -6090242428049896992
+      Atlas2_18: -2651270358228210726
+      Atlas2_17: 2415934852391214970
+      Atlas2_2: 7866271030270689315
+      Atlas2_0: -3919981076082286801
+      Atlas2_5: -3272624467260022385
+      Atlas2_8: -5950868152897857835
+      Atlas2_12: -5571453795373387570
+      Atlas2_7: 3124417569305801657
+      Atlas2_13: -6777542173974867263
+      Atlas2_14: -2168910207342706043
+      Atlas2_6: -4911933114060963458
+      Atlas2_1: -259679821165948209
+      Atlas2_3: -7601638585160004666
+      Atlas2_10: -432251291309978922
+      Atlas2_11: -8909344895371290200
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

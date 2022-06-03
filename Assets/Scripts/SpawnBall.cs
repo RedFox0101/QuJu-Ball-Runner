@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SpawnBall : MonoBehaviour
 {
-    [SerializeField] private GameObject _effect;
     [SerializeField] private ContainerPlayers _collectionPlayers;
     [SerializeField] private Timer _timer;
 
@@ -41,8 +40,7 @@ public class SpawnBall : MonoBehaviour
         _transformPlayer.parent = null;
 
         _transformPlayer.position = new Vector2(_platformaTransform.position.x + _offset, _platformaTransform.position.y + _offset);
-
-        Instantiate(_effect, _transformPlayer);    
+    
     }
 
     public void OnSpawn()

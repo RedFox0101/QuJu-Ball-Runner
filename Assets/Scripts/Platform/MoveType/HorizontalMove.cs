@@ -3,11 +3,11 @@ using UnityEngine;
 public class HorizontalMove : IMove
 {
     private float _speed;
-    private Move _platform;
+    private Platform _platform;
     private Camera _camera;
     private float _leftEdgeScreen;
 
-    public HorizontalMove(Move platform)
+    public HorizontalMove(Platform platform)
     {
         _camera = Camera.main;
         _leftEdgeScreen = _camera.transform.position.x - _camera.orthographicSize/2;

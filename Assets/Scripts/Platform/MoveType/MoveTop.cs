@@ -4,7 +4,7 @@ public class MoveTop : IMove
 {
     private float _speed;
     
-    public MoveTop(Move platforma)
+    public MoveTop(Platform platforma)
     {
         _speed = platforma.Speed;
     }

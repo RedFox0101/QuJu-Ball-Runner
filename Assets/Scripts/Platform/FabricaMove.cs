@@ -4,9 +4,9 @@ public class FabricaMove
 {
     private IMove _move;
     private ColectionMove _typeMove;
-    private Move _platforma;
+    private Platform _platforma;
 
-    public FabricaMove(ColectionMove type, Move platforma)
+    public FabricaMove(ColectionMove type, Platform platforma)
     {
         _typeMove = type;
        _platforma = platforma;

@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class SpawnBonus : MonoBehaviour
 {
-    [SerializeField]
-    public List<GameObject> Bonus;
+    [SerializeField] private List<GameObject> _bonus;
+    [SerializeField] private float _coolDownSpawn;
 
-    private void Start()
+    private float lastTime=0;
+
+    private void Update()
     {
-        if (Random.Range(0, 10) == 5)
+        if (lastTime >= _coolDownSpawn)
         {
-            var bonus = Instantiate(Bonus[Random.Range(0, Bonus.Count)], transform.position, Quaternion.identity);
-            bonus.transform.parent = this.transform;
+            lastTime = 0;
+            Spawn();
         }
+        lastTime += Time.deltaTime;
+    }
+
+    private void Spawn()
+    {
+        var platforms = FindObjectsOfType<Platform>();
+        var platform = platforms[Random.Range(0, platforms.Length)];
+        var bonusPrefab = _bonus[Random.Range(0, _bonus.Count)];
+        var bonus = Instantiate(bonusPrefab, platform.transform.position, Quaternion.identity, platform.transform);
     }
 }

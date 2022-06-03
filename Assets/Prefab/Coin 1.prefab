@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1559609991475407079}
   - component: {fileID: 1559609991475407078}
-  - component: {fileID: -5462044782220573695}
   - component: {fileID: 4567921943469230739}
   - component: {fileID: 5018155392572609600}
-  - component: {fileID: 1674513111136748935}
+  - component: {fileID: 1168005696025664100}
   m_Layer: 3
   m_Name: Coin 1
   m_TagString: Coin
@@ -31,6 +30,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.6667, y: 1.7069, z: 0}
   m_LocalScale: {x: 0.08384879, y: 0.08384879, z: 0.08384879}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -46,6 +46,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -86,20 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-5462044782220573695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559609991475407077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c113d34337d291344be31fa9f4590e62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Particall: {fileID: 876328225115594239, guid: fb3f7720189956345aa6d1de62157d8f, type: 3}
-  _bonusEffect: {fileID: 11400000, guid: 5d7707abba94b0c418911108c0eb8552, type: 2}
 --- !u!50 &4567921943469230739
 Rigidbody2D:
   serializedVersion: 4
@@ -147,7 +134,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.8602247, y: 5.86}
   m_EdgeRadius: 0
---- !u!114 &1674513111136748935
+--- !u!114 &1168005696025664100
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -156,7 +143,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1559609991475407077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4549c6fc7b3721949b8cd5fb0838bf34, type: 3}
+  m_Script: {fileID: 11500000, guid: a67d14efcfc1e2147ae5f55ae2e42cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveCollections: 1

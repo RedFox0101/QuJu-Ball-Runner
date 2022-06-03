@@ -7,8 +7,7 @@ public class Coin : MonoBehaviour
         if (collision.gameObject.TryGetComponent(out Purse purse))
         {
             purse.AddCoins();
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
-
     }
 }

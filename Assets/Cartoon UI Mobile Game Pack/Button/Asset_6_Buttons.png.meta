@@ -108,6 +108,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -796,6 +797,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Asset 41_7: 21300014
+      Asset 41_4: 21300008
+      Asset 41_27: 21300054
+      Asset 41_26: 21300052
+      Asset 41_9: 21300018
+      Asset 41_20: 21300040
+      Asset 41_16: 21300032
+      Asset 41_2: 21300004
+      Asset 41_25: 21300050
+      Asset 41_3: 21300006
+      Asset 41_12: 21300024
+      Asset 41_18: 21300036
+      Asset 41_17: 21300034
+      Asset 41_10: 21300020
+      Asset 41_19: 21300038
+      Asset 41_11: 21300022
+      Asset 41_5: 21300010
+      Asset 41_23: 21300046
+      Asset 41_24: 21300048
+      Asset 41_8: 21300016
+      Asset 41_0: 21300000
+      Asset 41_1: 21300002
+      Asset 41_21: 21300042
+      Asset 41_6: 21300012
+      Asset 41_14: 21300028
+      Asset 41_13: 21300026
+      Asset 41_15: 21300030
+      Asset 41_22: 21300044
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
