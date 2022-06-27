@@ -5,13 +5,13 @@ public class HorizontalMove : IMove
     private float _speed;
     private Platform _platform;
     private Camera _camera;
-    private float _leftEdgeScreen;
+    private float _leftEdgeScreen, _rightEdgeScreen;
 
     public HorizontalMove(Platform platform)
     {
         _camera = Camera.main;
-        _leftEdgeScreen = _camera.transform.position.x - _camera.orthographicSize/2;
-        
+        _leftEdgeScreen = _camera.GetEdgeCamera().Item1;
+        _rightEdgeScreen= _camera.GetEdgeCamera().Item2;
         _platform = platform;
         _speed = platform.Speed;
     }
@@ -23,7 +23,7 @@ public class HorizontalMove : IMove
             FlipDirection();
         }
 
-        if (_platform.transform.position.x > _camera.orthographicSize)
+        if (_platform.transform.position.x > _rightEdgeScreen-1.2f)
         {
             FlipDirection();
         }

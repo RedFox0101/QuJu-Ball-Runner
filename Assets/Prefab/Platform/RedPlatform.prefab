@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2135094049058590847}
   - component: {fileID: 2214016947808710609}
   - component: {fileID: 5433671205920463597}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: RedPlatform
   m_TagString: Dangerous
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 2.38, y: -0.71}

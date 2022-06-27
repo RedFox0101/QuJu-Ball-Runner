@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6832276184183215755}
   - component: {fileID: 6104308276792789736}
   - component: {fileID: -1036650608237771119}
+  - component: {fileID: 977680044898871840}
   m_Layer: 6
   m_Name: Platform
   m_TagString: Platform
@@ -149,3 +150,18 @@ MonoBehaviour:
   MoveCollections: 0
   _speed: 0
   _bounceForce: 100
+--- !u!114 &977680044898871840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5379078640293629498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f530199496c38fd47b4f9df69f79b63f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bonus:
+  - {fileID: 1126307099713696848, guid: 114d7ef00f95767409d030db7af12847, type: 3}
+  _changeSpawn: 5

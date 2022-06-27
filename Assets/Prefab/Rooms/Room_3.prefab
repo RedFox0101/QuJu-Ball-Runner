@@ -81,6 +81,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2623765156031093135}
   - component: {fileID: 4651507931081681601}
+  - component: {fileID: 3113649398929332222}
   m_Layer: 0
   m_Name: Room_3
   m_TagString: Untagged
@@ -131,6 +132,18 @@ MonoBehaviour:
   _speed: 3
   Begin: {fileID: 3593314187435583522}
   End: {fileID: 6913671416899850594}
+--- !u!114 &3113649398929332222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6293057566177214615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ada877802a241146aa4c213bfd833ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8041894097297669646
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,6 +620,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2623765156031093135}
     m_Modifications:
+    - target: {fileID: -1036650608237771119, guid: f08085b4861131d4abe9c8708554e8c9, type: 3}
+      propertyPath: _speed
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: -1036650608237771119, guid: f08085b4861131d4abe9c8708554e8c9, type: 3}
+      propertyPath: MoveCollections
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 595902170246867335, guid: f08085b4861131d4abe9c8708554e8c9, type: 3}
       propertyPath: MoveCollections
       value: 0
@@ -735,6 +756,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2623765156031093135}
     m_Modifications:
+    - target: {fileID: -1036650608237771119, guid: f08085b4861131d4abe9c8708554e8c9, type: 3}
+      propertyPath: _speed
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: -1036650608237771119, guid: f08085b4861131d4abe9c8708554e8c9, type: 3}
+      propertyPath: MoveCollections
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5151086838048340787, guid: f08085b4861131d4abe9c8708554e8c9, type: 3}
       propertyPath: m_RootOrder
       value: 5

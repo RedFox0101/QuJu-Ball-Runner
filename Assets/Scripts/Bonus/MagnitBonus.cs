@@ -2,31 +2,30 @@ using UnityEngine;
 
 public class MagnitBonus : Bonus
 {
-    private PointEffector2D _pointEffector;
+    private ContainerEffecor _effector;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.TryGetComponent(out PointEffector2D pointEffector2D))
+        if (collision.gameObject.TryGetComponent(out ContainerEffecor effector))
         {
-            Timer = ContainerBonusTimers.Instants.TimerMagniteBonus;
-            _pointEffector = pointEffector2D;
-            transform.position= new Vector2(-5, -10);
+            _effector = effector;
             Do();
-                
         }
     }
 
     protected override void Effect()
     {
-        _pointEffector.enabled = true;
+        this.transform.position = new Vector2(-5, -10);
+        Timer = ContainerBonusTimers.Instants.TimerMagniteBonus;
+        _effector.StartEffect();
+        Timer.Completed += Stop;
+       
     }
 
-    private void Update()
+    private void Stop()
     {
-        if (Timer.IsTimerWorks == false)
-        {
-            _pointEffector.enabled = false;
-            Destroy(gameObject);    
-        }
+        Timer.Completed -= Stop;
+        _effector.StopEffect();
+        Destroy(gameObject);
     }
 }

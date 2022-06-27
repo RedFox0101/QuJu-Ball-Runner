@@ -1,21 +1,22 @@
-using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class BonusTimer : MonoBehaviour
 {
     [SerializeField] private Image _iconTimer;
 
-    public bool IsTimerWorks { get; private set; }
+    public UnityAction Completed;
 
-    public void StartTimer(float coolDown)
+    public async void StartTimer(float coolDown)
     {
-        StartCoroutine(Timer(coolDown));
+        await Timer(coolDown);
+        this.gameObject.SetActive(false);
     }
 
-    IEnumerator Timer(float coolDown)
+    private async Task Timer(float coolDown)
     {
-        IsTimerWorks = true;
         _iconTimer.fillAmount = 1;
         while (_iconTimer.fillAmount != 0)
         {
@@ -23,9 +24,8 @@ public class BonusTimer : MonoBehaviour
             {
                 _iconTimer.fillAmount -= 0.01f / coolDown;
             }
-            yield return new WaitForFixedUpdate();
+            await Task.Yield();
         }
-        this.gameObject.SetActive(false);
-        IsTimerWorks = false;
+        Completed?.Invoke();
     }
 }

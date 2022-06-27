@@ -9,7 +9,7 @@ public class FabricaMove
     public FabricaMove(ColectionMove type, Platform platforma)
     {
         _typeMove = type;
-       _platforma = platforma;
+        _platforma = platforma;
         CreateMove();
     }
 
@@ -17,9 +17,6 @@ public class FabricaMove
     {
         switch (_typeMove)
         {
-            case ColectionMove.Up:
-                _move = new MoveTop(_platforma);
-                break;
             case ColectionMove.Horizontal:
                 _move = new HorizontalMove(_platforma);
                 break;

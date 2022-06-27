@@ -5,7 +5,6 @@ using UnityEngine;
 public enum ColectionMove 
 {
    None, 
-   Up,
    Horizontal,
    Random
  

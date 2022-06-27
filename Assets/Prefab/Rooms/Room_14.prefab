@@ -112,6 +112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1364476846482883488}
   - component: {fileID: 8506065107612430574}
+  - component: {fileID: 3734749551624526693}
   m_Layer: 0
   m_Name: Room_14
   m_TagString: Untagged
@@ -158,6 +159,18 @@ MonoBehaviour:
   _speed: 3
   Begin: {fileID: 529420086048748045}
   End: {fileID: 7598891377514646349}
+--- !u!114 &3734749551624526693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7049130089070435000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ada877802a241146aa4c213bfd833ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &659701130163372207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -620,3 +633,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2969317278769304829, guid: 4a6c5622ef9ac474e9bc5539426f63db, type: 3}
   m_PrefabInstance: {fileID: 9022393062127193603}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6474730736525733879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2661389761429709300, guid: 4a6c5622ef9ac474e9bc5539426f63db, type: 3}
+  m_PrefabInstance: {fileID: 9022393062127193603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3843127901043349578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6474730736525733879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f046e4ee854a4294594fae8d44da0b04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveCollections: 1
+  _speed: 0.09

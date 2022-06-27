@@ -18,9 +18,7 @@ GameObject:
   - component: {fileID: 6269987704951469228}
   - component: {fileID: 3449341704580373112}
   - component: {fileID: 2859554237660291113}
-  - component: {fileID: 1640744583}
   - component: {fileID: 1640744573}
-  - component: {fileID: 1640744584}
   m_Layer: 7
   m_Name: Ball_1
   m_TagString: Player
@@ -227,22 +225,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13d11be8f955ca44c917daedc4090173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &1640744583
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812303361536886037}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 7.26
 --- !u!96 &1640744573
 TrailRenderer:
   serializedVersion: 2
@@ -351,15 +333,3 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!114 &1640744584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812303361536886037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f60db39efb31c40a6bfc4e732f28ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

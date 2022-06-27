@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4179248606570194296}
   - component: {fileID: 8038524637119111756}
+  - component: {fileID: -1420413591153356423}
   m_Layer: 0
   m_Name: Room_2
   m_TagString: Untagged
@@ -59,6 +60,18 @@ MonoBehaviour:
   _speed: 3
   Begin: {fileID: 6008387199859685666}
   End: {fileID: 9199117662642002168}
+--- !u!114 &-1420413591153356423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069224446028090118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ada877802a241146aa4c213bfd833ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3885269777622146759
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,6 +519,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4179248606570194296}
     m_Modifications:
+    - target: {fileID: -1036650608237771119, guid: f08085b4861131d4abe9c8708554e8c9, type: 3}
+      propertyPath: _speed
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: -1036650608237771119, guid: f08085b4861131d4abe9c8708554e8c9, type: 3}
+      propertyPath: MoveCollections
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 595902170246867335, guid: f08085b4861131d4abe9c8708554e8c9, type: 3}
       propertyPath: MoveCollections
       value: 2
@@ -771,6 +792,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 4179248606570194296}
     m_Modifications:
     - target: {fileID: -6280845665816087873, guid: f08085b4861131d4abe9c8708554e8c9, type: 3}
+      propertyPath: MoveCollections
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1036650608237771119, guid: f08085b4861131d4abe9c8708554e8c9, type: 3}
+      propertyPath: _speed
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: -1036650608237771119, guid: f08085b4861131d4abe9c8708554e8c9, type: 3}
       propertyPath: MoveCollections
       value: 2
       objectReference: {fileID: 0}

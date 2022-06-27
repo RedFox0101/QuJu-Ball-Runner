@@ -7,10 +7,9 @@ public abstract class Bonus : MonoBehaviour
 
     protected void Do()
     {
+        Effect();
         Timer.gameObject.SetActive(true);
         Timer.StartTimer(_coolDown);
-        Effect();
-       
     }
 
     protected abstract void Effect();
